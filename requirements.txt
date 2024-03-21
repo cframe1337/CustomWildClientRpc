@@ -1,0 +1,5 @@
+pip~=23.2.1
+wheel~=0.41.2
+setuptools~=68.2.0
+colorama~=0.4.6
+pypresence~=4.3.0
