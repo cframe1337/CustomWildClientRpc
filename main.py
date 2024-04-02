@@ -1,13 +1,13 @@
 import os as o
 import sys as s
 import time as t
+import calendar as c
+import datetime as d
 
-from datetime.datetime import today
 from colorama import init, Fore
 from pypresence import Presence
 
 init(autoreset=True)
-
 
 def premain(userid: any):
     assert len(userid) != 0
@@ -20,11 +20,12 @@ def main(userid: any):
         state=f"User ID: {userid}",
         start=round(t.time()),
         large_image="https://github.com/cframe1337/CustomWildClientRpc/blob/main/wild-icon-new.gif?raw=true",
-        large_text=f"Build: {today().month} {today().day}, {today().year}",
+        large_text=f"Build: {c.month_name[d.datetime.today().month]}"
+                    + f" {d.datetime.today().day}, {d.datetime.today().year}",
         buttons=[{"label": "Приобрести", "url": "https://wildclient.org/"},
                  {"label": "ВКонтакте", "url": "https://vk.com/wildclient/"}])
 
-    s.stdout.write(Fore.YELLOW + '\nНажмите Enter чтобы закрыть программу.')
+    s.stdout.write(Fore.YELLOW + '\nНажмите Enter чтобы закрыть программу.\n')
 
 
 def title(text: str):
