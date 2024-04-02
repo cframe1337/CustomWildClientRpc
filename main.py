@@ -18,7 +18,7 @@ def main(userid: any):
     rpc.update(
         state=f"User ID: {userid}",
         start=round(t.time()),
-        large_image="https://github.com/cframe1337/CustomWildClientRpc/blob/main/wild-icon.gif?raw=true",
+        large_image="https://github.com/cframe1337/CustomWildClientRpc/blob/main/wild-icon-new.gif?raw=true",
         large_text="Build: March 21, 2024",
         buttons=[{"label": "Приобрести", "url": "https://wildclient.org/"},
                  {"label": "ВКонтакте", "url": "https://vk.com/wildclient/"}])
