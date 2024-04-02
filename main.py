@@ -2,6 +2,7 @@ import os as o
 import sys as s
 import time as t
 
+from datetime.datetime import today
 from colorama import init, Fore
 from pypresence import Presence
 
@@ -19,7 +20,7 @@ def main(userid: any):
         state=f"User ID: {userid}",
         start=round(t.time()),
         large_image="https://github.com/cframe1337/CustomWildClientRpc/blob/main/wild-icon-new.gif?raw=true",
-        large_text="Build: March 21, 2024",
+        large_text=f"Build: {today().month} {today().day}, {today().year}",
         buttons=[{"label": "Приобрести", "url": "https://wildclient.org/"},
                  {"label": "ВКонтакте", "url": "https://vk.com/wildclient/"}])
 
