@@ -8,10 +8,10 @@ from pypresence import Presence
 
 
 def premain(userid: any):
-    if len(userid) != 0:
-        main(userid, nickname)
+    if len(userid) != 0: 
+        main(userid)
         o.system('pause')
-    else:
+    else: 
         o.system('clear')
 
 
