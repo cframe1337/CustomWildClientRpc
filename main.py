@@ -7,7 +7,7 @@ import datetime as d
 from pypresence import Presence
 
 
-def premain(userid: any) -> None:
+def handle_rpc(userid: any) -> None:
     if len(userid) != 0: 
         main(userid)
         o.system('pause')
@@ -15,7 +15,7 @@ def premain(userid: any) -> None:
         o.system('clear')
 
 
-def main(userid: any -> None):
+def start_rpc(userid: any -> None):
     rpc.update(
         state=f"User ID: {userid}",
         start=round(t.time()),
@@ -36,4 +36,4 @@ if __name__ == '__main__':
     # You can use own client id that you copied from project at Discord Developers Portal
     rpc.connect()
 
-    premain(c_input('userid'))
+    handle_rpc(c_input('userid'))
