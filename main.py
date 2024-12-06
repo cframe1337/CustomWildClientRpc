@@ -9,7 +9,7 @@ from pypresence import Presence
 
 def handle_rpc(userid: any) -> None:
     if len(userid) != 0: 
-        main(userid)
+        start_rpc(userid)
         o.system('pause')
     else: 
         o.system('clear')
